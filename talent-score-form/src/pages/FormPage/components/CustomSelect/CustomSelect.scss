@@ -1,0 +1,69 @@
+@import "./../../../../variables";
+
+
+.select_container{
+    margin-top: 15px;
+    border-radius: 18px;
+
+    .custom_select{
+        margin-top: 20px;
+    }
+}
+div.select{
+    &__single-value{
+        color: $main_text_color;
+    }
+    &__control{
+        background-color: $btn_color ;
+        border: 0;
+        border-radius: 13px;
+    }
+    &__option{
+        position: relative;
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 7.5px;
+            border: 1px solid $main_text_color;
+            position: absolute;
+            right: 10px;
+            top:14px;
+            background-color: $text_color;
+            
+        }
+    }
+    &__option--is-selected{
+        background-color: $btn_color;
+        color: $main_text_color;
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 7.5px;
+            border: 1px solid $main_text_color;
+            position: absolute;
+            right: 10px;
+            top:14px;
+            background-color: $main_text_color;
+            
+        }
+    }
+    &__option--is-focused{
+        color: $main_text_color;
+    }
+    &__indicator{
+        svg{
+            fill: $main_text_color;
+        }
+    }
+    &__menu{
+        width: 50%;
+        background-color: $btn_color ;
+    }
+    &__indicator-separator{
+        width:0px ;
+    }
+}
