@@ -1,0 +1,39 @@
+@import '../../variables';
+
+.main_part {
+    position: relative;
+    .line {
+      background-color: $text_color;
+      position: absolute;
+    }
+    .line_short {
+      height: 314px;
+      width: 3px;
+      top: 0;
+      left: 15px;
+    }
+    .line_long {
+      height: 407px;
+      width: 2px;
+      top: 0;
+      left: 25px;
+    }
+    .text {
+      padding-left: 45px;
+      padding-top: 20px;
+      position: absolute;
+      top: 30px;
+      color: $text_color;
+      .summary {
+        max-width: 280px;
+        padding-top: 20px;
+        font-size: 0.88rem;
+        line-height: 1.25rem;
+      }
+    }
+    .main_img {
+      position: absolute;
+      bottom: 0;
+      left: 250px;
+    }
+  }

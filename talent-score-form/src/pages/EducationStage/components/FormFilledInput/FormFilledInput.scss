@@ -1,0 +1,67 @@
+@import '../../../../variables';
+
+.slider {
+    width: 100%;
+    height: 25px ;
+    background-color: $btn_color;
+    border-radius: 15px;
+    .green{
+        height: 100%;
+        background-color: $main_text_color;
+        border-radius: 15px;
+
+    }
+     .green_first {
+          width: 40%;
+          animation: widthAnimation1 .8s linear;
+      }
+     .green_second {
+          width: 60%;
+          animation: widthAnimation2 1s linear;
+      }
+     .green_third {
+          width: 100%;
+          animation: widthAnimation3 1.2s linear;
+      }
+     .green_fifty {
+          width: 50%;
+          animation: widthAnimation4 1s linear;
+      }
+    
+}
+@keyframes widthAnimation1 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 40%;
+    }
+    
+  }
+@keyframes widthAnimation2 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 60%;
+    }
+    
+  }
+@keyframes widthAnimation3 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+    
+  }
+@keyframes widthAnimation4 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 50%;
+    }
+    
+  }

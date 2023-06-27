@@ -1,0 +1,63 @@
+@import "../../variables";
+#experience {
+  gap: 18px;
+  input[type="text"],
+  input[type="date"] {
+    width: 100%;
+  }
+  .checkbox {
+    align-self: flex-end;
+    input {
+      accent-color: $main_text_color;
+    }
+  }
+  .save {
+    position: static;
+    padding: 8px 25px;
+    align-self: center;
+    margin-top: 20px;
+  }
+  .date {
+    position: relative;
+    .calendar_icon {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: 13px;
+      bottom: 13px;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      opacity: 0;
+      z-index: 10;
+    }
+  }
+  .experience_list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 15px;
+    li{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 70px;
+        color: gray;
+        align-items: center;
+        .info{
+          width: 90px;
+        }
+        img{
+            cursor: pointer;
+        }
+    }
+  }
+  .add{
+    position: static;
+    width: 250px;
+    margin: 0 auto;
+  }
+}
+a {
+  display: block;
+}

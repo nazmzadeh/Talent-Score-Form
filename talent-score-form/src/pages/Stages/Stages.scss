@@ -1,0 +1,25 @@
+@import '../../variables';
+ul {
+    list-style: none;
+    padding-top: 45px;
+    text-align: center;
+    .stage {
+      cursor: pointer;
+      border: 0;
+      padding: 14px 30px;
+      width: 200px;
+      border-radius: 20px;
+      background-color: $btn_color;
+      margin: 5px;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 300;
+      text-decoration: none;
+    }
+    .active {
+      width: 250px;
+      background-color: $selected_color;
+      color: $text_color;
+      transition: .2s linear;
+    }
+  }
